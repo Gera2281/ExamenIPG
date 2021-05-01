@@ -644,7 +644,6 @@ AUTOESTIMA=ASR+RESR+ESTR+SOCR;
 
 //se almacenan resultados para usarlos en la siguiente pagina
 
-alert(ASR)
 localStorage.setItem('ASR', ASR);
 localStorage.setItem('AS', AS);
 localStorage.setItem('AS2', AS2);
