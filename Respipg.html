@@ -1,182 +1,332 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="utf-8">
-<style >
-	table, tr, th{
-		border-collapse: collapse;
-	}
-</style>
+  <head>
+    <meta charset="utf-8">
+    <title>PPG - IPG</title>
+    <link rel="stylesheet" type="text/css" href="PPG.css">
+    <link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet'>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js" integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf" crossorigin="anonymous"></script>
+  </head>
+   <body>
 
-<title>PRUEBA</title>
-</head>
+    <div class="principal" id="testTabla">
 
-<body>
-
-<table id="testTabla" summary="EJEMPLO EXAM IPG" >
-  <tr>
-    <th>
-<b>P-IPG Perfil e Inventario de la Personalidad<br>
-Este test permite la evaluacion de las siguientes dimensiones de la personalidad:</b> <br> 
-<b>Ascendencia:</b> nivel de dominio verbal dentro del grupo, rol activo o pasivo, nivel de<br> independencia en la toma de decisiones, iniciativa, seguridad en si mismo en las relaciones con los demas. <br>
-<b>Responsabilidad:</b> capacidad de perseverar en el trabajo, tenacidad y determinacion,<br> confiabilidad.<br> 
-<b>Estabilidad Emocional:</b> ajuste emocional, ansiedad, tension nerviosa y tolerancia a la<br> frustracion. <br>
-<b>Sociabilidad:</b> tendencia social y gregaria. <br> 
-<b>Autoestima:</b> juicio acerca del propio valor personal.<br> 
-<b>Cautela:</b> control de la impulsividad, manejo del riesgo. <br>
-<b>Originalidad de pensamiento:</b> curiosidad intelectual, atraccion por resolucion de problemas<br> dificiles y por reflexiones novedosas.<br><b>Comprension en las relaciones personales:</b> grado de fe y confianza en los demas, tolerancia, paciencia y comprension.<br><b>Vitalidad en la accion:</b> nivel de vitalidad y energia, ritmo y capacidad de trabajo. <br></th>
-  </tr>
-
-  <thead>
-  <tr>
-	<th>&nbsp;</th>
-    <th>AS</th>
-    <th>&nbsp;</th>
-    <th>RES</th>
-    <th>&nbsp;</th>
-    <th>EST</th>
-    <th>&nbsp;</th>
-    <th>SOC</th>
-    <th>&nbsp;</th>
-
-  </tr>
-
-	<th>&nbsp;</th>
-    <th>Prc</th>
-    <th><span id="AS"></span></th>
-    <th>Prc</th>
-    <th><span id="RES"></span></th>
-    <th>Prc</th>
-    <th><span id="EST"></span></th>
-    <th>Prc</th>
-  	<th><span id="SOC"></span></th>
-  </tr>
-  <tr>
-	<th>&nbsp;</th>
-    <th>%</th>
-    <th><span id="AS2"></span></th>
-    <th>%</th>
-    <th><span id="RES2"></span></th>
-    <th>%</th>
-    <th><span id="EST2"></span></th>
-    <th>%</th>
-  	<th><span id="SOC2"></span></th>
-  </tr>
-  <tr>
-	<th>&nbsp;</th>
-    <th>Total</th>
-    <th><span id="ASR"></span></th>
-    <th>Total</th>
-    <th><span id="RESR"></span></th>
-    <th>Total</th>
-    <th><span id="ESTR"></span></th>
-    <th>Total</th>
-  	<th><span id="SOCR"></span></th>
-  </tr>
-  <tr>
-    &nbsp;
-    <th>AUTOESTIMA: <span id="AUTOEST"></span></th>
-  </tr>
-  <tr>
-    <th>&nbsp;</th>
-    <th>CAU</th>
-    <th>&nbsp;</th>
-    <th>ORI</th>
-    <th>&nbsp;</th>
-    <th>COM</th>
-    <th>&nbsp;</th>
-    <th>VIT</th>
-    <th>&nbsp;</th>
-  </tr>
-  <tr>
-    <th>&nbsp;</th>
-    <th>Prc</th>
-    <th><span id="CAU"></span></th>
-    <th>Prc</th>
-    <th><span id="ORI"></span></th>
-    <th>Prc</th>
-    <th><span id="COMP"></span></th>
-    <th>Prc</th>
-    <th><span id="VIT"></span></th>
-  </tr>
-  <tr>
-    <th>&nbsp;</th>
-    <th>%</th>
-    <th><span id="CAU2"></span></th>
-    <th>%</th>
-    <th><span id="ORI2"></span></th>
-    <th>%</th>
-    <th><span id="COMP2"></span></th>
-    <th>%</th>
-    <th><span id="VIT2"></span></th>
-  </tr>
-  <tr>
-    <th>&nbsp;</th>
-    <th>Total</th>
-    <th><span id="CAUR"></span></th>
-    <th>Total</th>
-    <th><span id="ORIR"></span></th>
-    <th>Total</th>
-    <th><span id="COMPR"></span></th>
-    <th>Total</th>
-    <th><span id="VITR"></span></th>
-  </tr>
-
-  <tr>
-    <td>&nbsp;</td>
-  <td>&nbsp;</td>
-  <td>&nbsp;</td>
-  <td>&nbsp;</td>
-  <td>&nbsp;</td>
-  <td>&nbsp;</td>
-    <td>&nbsp;</td>
-  <td>&nbsp;</td>
-  <td>&nbsp;</td>
-  <td>&nbsp;</td>
-  <td>&nbsp;</td>
-  <td>&nbsp;</td>
-    
-  </tr>
-</table>
-</div>
   
-  	
+      <div class="row">
+        
+        <div class="col-lg-8">
+            <div class="card">
+              <div class="card-header">
+                <b> P-IPG Perfil e Inventario de la Personalidad</b> <br>
+                Este test permite la evaluacion de las siguientes dimensiones de la personalidad
+              </div>
+              <ul class="list-group list-group-flush">
+                <li class="list-group-item">
+                  <b>Ascendencia:</b> <br>
+                  Nivel de dominio verbal dentro del grupo, rol activo o pasivo, nivel de independencia en la toma de decisiones, iniciativa, seguridad en si mismo en las relaciones con los demas.
+                </li>
+                <li class="list-group-item">
+                  <b>Responsabilidad:</b> <br>
+                  Capacidad de perseverar en el trabajo, tenacidad y determinacion,confiabilidad.
+                </li>
+                <li class="list-group-item">
+                  <b>Estabilidad Emocional:</b> <br>
+                  Ajuste emocional, ansiedad, tension nerviosa y tolerancia a la frustracion.
+                </li>
+                <li class="list-group-item">
+                  <b>Sociabilidad:</b> <br>
+                  Tendencia social y gregaria.
+                </li>
+                <li class="list-group-item">
+                  <b>Autoestima:</b> <br>
+                  Juicio acerca del propio valor personal.
+                </li>
+                <li class="list-group-item">
+                  <b>Cautela:</b> <br>
+                  Control de la impulsividad, manejo del riesgo.
+                </li>
+                <li class="list-group-item">
+                  <b>Originalidad de pensamiento:</b> <br>
+                  Curiosidad intelectual, atraccion por resolucion de problemas dificiles y por reflexiones novedosas. Comprension en las relaciones personales: grado de fe y confianza en los demas, tolerancia, paciencia y comprension.
+                </li>
+                <li class="list-group-item">
+                  <b>Vitalidad en la accion:</b> <br>
+                  Nivel de vitalidad y energia, ritmo y capacidad de trabajo.   
+                </li>
+              </ul>
+            </div>
+        </div>
+        <div class="col-lg-4 card">
 
-<input type="button" onclick="tabladeexcel('testTabla', 'RESULTADOS IPG')" value="Exportar a Excel">
+          <div class="row" style="margin-top: 10px;">
+            <div class="col-lg-12">
+              <div class="alert alert-success">
+                AUTOESTIMA: <span id="AUTOEST"></span>
+              </div>
+            </div>
+          </div>
 
- 
+          <table class="table table-striped">
+            <thead >
+               <tr>
+                  <th>AS</th>
+                  <th>&nbsp;</th>
+                  <th>RES</th>
+                  <th>&nbsp;</th>
+                  <th>EST</th>
+                  <th>&nbsp;</th>
+                  <th>SOC</th>
+                  <th>&nbsp;</th>
+               </tr>
+            </thead>
+            <tbody>
+               <tr>
+                  <td>Prc</td>
+                  <td><span id="AS"></span></td>
+                  <td>Prc</td>
+                  <td><span id="RES"></span></td>
+                  <td>Prc</td>
+                  <td><span id="EST"></span></td>
+                  <td>Prc</td>
+                  <td><span id="SOC"></span></td>
+               </tr>
+               <tr>
+                  <td>%</td>
+                  <td><span id="AS2"></span></td>
+                  <td>%</td>
+                  <td><span id="RES2"></span></td>
+                  <td>%</td>
+                  <td><span id="EST2"></span></td>
+                  <td>%</td>
+                  <td><span id="SOC2"></span></td>
+               </tr>
+               <tr>
+                  <td>Total</td>
+                  <td><span id="ASR"></span></td>
+                  <td>Total</td>
+                  <td><span id="RESR"></span></td>
+                  <td>Total</td>
+                  <td><span id="ESTR"></span></td>
+                  <td>Total</td>
+                  <td><span id="SOCR"></span></td>
+               </tr>
+            </tbody>
+          </table>
+
+          <br/><br/><br/>
+
+          <table class="table table-striped">
+          <thead>
+             <tr>
+                <th>CAU</th>
+                <th>&nbsp;</th>
+                <th>ORI</th>
+                <th>&nbsp;</th>
+                <th>COM</th>
+                <th>&nbsp;</th>
+                <th>VIT</th>
+                <th>&nbsp;</th>
+             </tr>
+          </thead>
+          <tbody>
+             <tr>
+                <td>Prc</td>
+                <td><span id="CAU"></span></td>
+                <td>Prc</td>
+                <td><span id="ORI"></span></td>
+                <td>Prc</td>
+                <td><span id="COMP"></span></td>
+                <td>Prc</td>
+                <td><span id="VIT"></span></td>
+             </tr>
+             <tr>
+                <td>%</td>
+                <td><span id="CAU2"></span></td>
+                <td>%</td>
+                <td><span id="ORI2"></span></td>
+                <td>%</td>
+                <td><span id="COMP2"></span></td>
+                <td>%</td>
+                <td><span id="VIT2"></span></td>
+             </tr>
+             <tr>
+                <td>Total</td>
+                <td><span id="CAUR"></span></td>
+                <td>Total</td>
+                <td><span id="ORIR"></span></td>
+                <td>Total</td>
+                <td><span id="COMPR"></span></td>
+                <td>Total</td>
+                <td><span id="VITR"></span></td>
+             </tr>
+          </tbody>
+          </table>
+  
+        </div>
+
+      </div>
+      
+    </div>
+    
+    <div class="row" style="margin-right: 10px;">
+      <div class="content" style="margin-top: 10px; text-align: right;">
+        <button type="button" class="btn btn-success" onclick="tabladeexcel('testTabla', 'RESULTADOS IPG')">Exportar a excel</button>
+      </div>
+    </div>
 
 
-<script type="text/javascript" src="js/ipg.js"></script>
-<script type="text/javascript" src="js/tabla.js"></script>
-<script>
-
-  document.getElementById('ASR').textContent = localStorage.getItem('ASR');
-  document.getElementById('AS').textContent = localStorage.getItem('AS');
-  document.getElementById('AS2').textContent = localStorage.getItem('AS2');
-  document.getElementById('RESR').textContent = localStorage.getItem('RESR');
-  document.getElementById('RES').textContent = localStorage.getItem('RES');
-  document.getElementById('RES2').textContent = localStorage.getItem('RES2');
-  document.getElementById('ESTR').textContent = localStorage.getItem('ESTR');
-  document.getElementById('EST').textContent = localStorage.getItem('EST');
-  document.getElementById('EST2').textContent = localStorage.getItem('EST2');
-  document.getElementById('SOCR').textContent = localStorage.getItem('SOCR');
-  document.getElementById('SOC').textContent = localStorage.getItem('SOC');
-  document.getElementById('SOC2').textContent = localStorage.getItem('SOC2');
-  document.getElementById('CAUR').textContent = localStorage.getItem('CAUR');
-  document.getElementById('CAU').textContent = localStorage.getItem('CAU');
-  document.getElementById('CAU2').textContent = localStorage.getItem('CAU2');
-  document.getElementById('ORIR').textContent = localStorage.getItem('ORIR');
-  document.getElementById('ORI').textContent = localStorage.getItem('ORI');
-  document.getElementById('ORI2').textContent = localStorage.getItem('ORI2');
-  document.getElementById('COMPR').textContent = localStorage.getItem('COMPR');
-  document.getElementById('COMP').textContent = localStorage.getItem('COMP');
-  document.getElementById('COMP2').textContent = localStorage.getItem('COMP2');
-  document.getElementById('VITR').textContent = localStorage.getItem('VITR');
-  document.getElementById('VIT').textContent = localStorage.getItem('VIT');
-  document.getElementById('VIT2').textContent = localStorage.getItem('VIT2');
-  document.getElementById('AUTOEST').textContent = localStorage.getItem('AUTOEST');
-
-</script>
-</body>
+      <!--table id="testTabla" summary="EJEMPLO EXAM IPG" >
+         <tr>
+            <th>
+               <b>P-IPG Perfil e Inventario de la Personalidad<br>
+               Este test permite la evaluacion de las siguientes dimensiones de la personalidad:</b> <br> 
+               <b>Ascendencia:</b> nivel de dominio verbal dentro del grupo, rol activo o pasivo, nivel de<br> independencia en la toma de decisiones, iniciativa, seguridad en si mismo en las relaciones con los demas. <br>
+               <b>Responsabilidad:</b> capacidad de perseverar en el trabajo, tenacidad y determinacion,<br> confiabilidad.<br> 
+               <b>Estabilidad Emocional:</b> ajuste emocional, ansiedad, tension nerviosa y tolerancia a la<br> frustracion. <br>
+               <b>Sociabilidad:</b> tendencia social y gregaria. <br> 
+               <b>Autoestima:</b> juicio acerca del propio valor personal.<br> 
+               <b>Cautela:</b> control de la impulsividad, manejo del riesgo. <br>
+               <b>Originalidad de pensamiento:</b> curiosidad intelectual, atraccion por resolucion de problemas<br> dificiles y por reflexiones novedosas.<br><b>Comprension en las relaciones personales:</b> grado de fe y confianza en los demas, tolerancia, paciencia y comprension.<br><b>Vitalidad en la accion:</b> nivel de vitalidad y energia, ritmo y capacidad de trabajo. <br>
+            </th>
+         </tr>
+         <thead>
+            <tr>
+               <th>&nbsp;</th>
+               <th>AS</th>
+               <th>&nbsp;</th>
+               <th>RES</th>
+               <th>&nbsp;</th>
+               <th>EST</th>
+               <th>&nbsp;</th>
+               <th>SOC</th>
+               <th>&nbsp;</th>
+            </tr>
+            <th>&nbsp;</th>
+            <th>Prc</th>
+            <th><span id="AS"></span></th>
+            <th>Prc</th>
+            <th><span id="RES"></span></th>
+            <th>Prc</th>
+            <th><span id="EST"></span></th>
+            <th>Prc</th>
+            <th><span id="SOC"></span></th>
+            </tr>
+            <tr>
+               <th>&nbsp;</th>
+               <th>%</th>
+               <th><span id="AS2"></span></th>
+               <th>%</th>
+               <th><span id="RES2"></span></th>
+               <th>%</th>
+               <th><span id="EST2"></span></th>
+               <th>%</th>
+               <th><span id="SOC2"></span></th>
+            </tr>
+            <tr>
+               <th>&nbsp;</th>
+               <th>Total</th>
+               <th><span id="ASR"></span></th>
+               <th>Total</th>
+               <th><span id="RESR"></span></th>
+               <th>Total</th>
+               <th><span id="ESTR"></span></th>
+               <th>Total</th>
+               <th><span id="SOCR"></span></th>
+            </tr>
+            <tr>
+               &nbsp;
+               <th>AUTOESTIMA: <span id="AUTOEST"></span></th>
+            </tr>
+            <tr>
+               <th>&nbsp;</th>
+               <th>CAU</th>
+               <th>&nbsp;</th>
+               <th>ORI</th>
+               <th>&nbsp;</th>
+               <th>COM</th>
+               <th>&nbsp;</th>
+               <th>VIT</th>
+               <th>&nbsp;</th>
+            </tr>
+            <tr>
+               <th>&nbsp;</th>
+               <th>Prc</th>
+               <th><span id="CAU"></span></th>
+               <th>Prc</th>
+               <th><span id="ORI"></span></th>
+               <th>Prc</th>
+               <th><span id="COMP"></span></th>
+               <th>Prc</th>
+               <th><span id="VIT"></span></th>
+            </tr>
+            <tr>
+               <th>&nbsp;</th>
+               <th>%</th>
+               <th><span id="CAU2"></span></th>
+               <th>%</th>
+               <th><span id="ORI2"></span></th>
+               <th>%</th>
+               <th><span id="COMP2"></span></th>
+               <th>%</th>
+               <th><span id="VIT2"></span></th>
+            </tr>
+            <tr>
+               <th>&nbsp;</th>
+               <th>Total</th>
+               <th><span id="CAUR"></span></th>
+               <th>Total</th>
+               <th><span id="ORIR"></span></th>
+               <th>Total</th>
+               <th><span id="COMPR"></span></th>
+               <th>Total</th>
+               <th><span id="VITR"></span></th>
+            </tr>
+            <tr>
+               <td>&nbsp;</td>
+               <td>&nbsp;</td>
+               <td>&nbsp;</td>
+               <td>&nbsp;</td>
+               <td>&nbsp;</td>
+               <td>&nbsp;</td>
+               <td>&nbsp;</td>
+               <td>&nbsp;</td>
+               <td>&nbsp;</td>
+               <td>&nbsp;</td>
+               <td>&nbsp;</td>
+               <td>&nbsp;</td>
+            </tr>
+      </table-->
+      </div>
+      
+    
+      <script type="text/javascript" src="js/tabla.js"></script>
+      <script>
+         document.getElementById('ASR').textContent = localStorage.getItem('ASR');
+         document.getElementById('AS').textContent = localStorage.getItem('AS');
+         document.getElementById('AS2').textContent = localStorage.getItem('AS2');
+         document.getElementById('RESR').textContent = localStorage.getItem('RESR');
+         document.getElementById('RES').textContent = localStorage.getItem('RES');
+         document.getElementById('RES2').textContent = localStorage.getItem('RES2');
+         document.getElementById('ESTR').textContent = localStorage.getItem('ESTR');
+         document.getElementById('EST').textContent = localStorage.getItem('EST');
+         document.getElementById('EST2').textContent = localStorage.getItem('EST2');
+         document.getElementById('SOCR').textContent = localStorage.getItem('SOCR');
+         document.getElementById('SOC').textContent = localStorage.getItem('SOC');
+         document.getElementById('SOC2').textContent = localStorage.getItem('SOC2');
+         document.getElementById('CAUR').textContent = localStorage.getItem('CAUR');
+         document.getElementById('CAU').textContent = localStorage.getItem('CAU');
+         document.getElementById('CAU2').textContent = localStorage.getItem('CAU2');
+         document.getElementById('ORIR').textContent = localStorage.getItem('ORIR');
+         document.getElementById('ORI').textContent = localStorage.getItem('ORI');
+         document.getElementById('ORI2').textContent = localStorage.getItem('ORI2');
+         document.getElementById('COMPR').textContent = localStorage.getItem('COMPR');
+         document.getElementById('COMP').textContent = localStorage.getItem('COMP');
+         document.getElementById('COMP2').textContent = localStorage.getItem('COMP2');
+         document.getElementById('VITR').textContent = localStorage.getItem('VITR');
+         document.getElementById('VIT').textContent = localStorage.getItem('VIT');
+         document.getElementById('VIT2').textContent = localStorage.getItem('VIT2');
+         document.getElementById('AUTOEST').textContent = localStorage.getItem('AUTOEST');
+      </script>
+   </body>
 </html>
