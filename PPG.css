@@ -1,0 +1,12 @@
+.principal{
+background: #fafafa;
+  padding: 30px;
+  margin-top: 1px;
+  border-radius: 20px;
+  font-family: 'calibri';
+  color: black;
+}
+
+.pregunta{
+  font-family: 'arial';
+}
