@@ -7,12 +7,7 @@
 		border-collapse: collapse;
 	}
 </style>
-<script>
 
-  var ASR = localStorage.getItem('ASR');
-  alert(ASR)
-
-</script>
 <title>PRUEBA</title>
 </head>
 
@@ -70,7 +65,7 @@ Este test permite la evaluacion de las siguientes dimensiones de la personalidad
   <tr>
 	<th>&nbsp;</th>
     <th>Total</th>
-    <th>xx</th>
+    <th><span id="ASR">100</span></th>
     <th>Total</th>
     <th>yy</th>
     <th>Total</th>
@@ -154,5 +149,10 @@ Este test permite la evaluacion de las siguientes dimensiones de la personalidad
 
 <script type="text/javascript" src="js/ipg.js"></script>
 <script type="text/javascript" src="js/tabla.js"></script>
+<script>
+  
+  document.getElementById('ASR').value= localStorage.getItem('ASR');
+
+</script>
 </body>
 </html>
