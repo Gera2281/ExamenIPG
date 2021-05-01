@@ -644,6 +644,7 @@ AUTOESTIMA=ASR+RESR+ESTR+SOCR;
 
 //se almacenan resultados para usarlos en la siguiente pagina
 
+alert(ASR)
 localStorage.setItem('ASR', ASR);
 localStorage.setItem('AS', AS);
 localStorage.setItem('AS2', AS2);
@@ -675,6 +676,8 @@ localStorage.setItem('VIT2', VIT2);
 localStorage.setItem('COMPR', COMPR);
 localStorage.setItem('COMP', COMP);
 localStorage.setItem('COMP2', COMP2);
+
+document.location = 'Respipg.html'; 
 
 //document.write("<table border='3'>");
 
