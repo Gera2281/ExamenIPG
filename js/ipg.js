@@ -1,7 +1,7 @@
 function resultadoipg(){
 var p1, p2, p3, p4, p5, p6, p7, p8, p9, p10, p11, p12, p13, p14, p15, p16, p17, p18, p19, p20, p21, p22, p23, p24, p25, p26, p27, p28, p29, p30, p31, p32, p33, p34, p35, p36, p37, p38, p39, p40,p41, p42, p43, p44, p45, p46, p47, p48, p49, p50, p51, p52, p53, p54, p55, p56, p57, p58, p59, p60, p61, p62, p63, p64, p65, p66, p67, p68, p69, p70, p71, p72, p73, p74, p75, p76, p77, p78, p79, p80;
 var p1d, p2d, p3d, p4d, p5d, p6d, p7d, p8d, p9d, p10d, p11d, p12d, p13d, p14d, p15d, p16d, p17d, p18d, p19d, p20d, p21d, p22d, p23d, p24d, p25d, p26d, p27d, p28d, p29d, p30d, p31d, p32d, p33d, p34d, p35d, p36d, p37d, p38d, p39d, p40d,p41d, p42d, p43d, p44d, p45d, p46d, p47d, p48d, p49d, p50d, p51d, p52d, p53d, p54d, p55d, p56d, p57d, p58d, p59d, p60d, p61d, p62d, p63d, p64d, p65d, p66d, p67d, p68d, p69d, p70d, p71d, p72d, p73d, p74d, p75d, p76d, p77d, p78d, p79d, p80d;
-var p81, p82, p83, p84, p85, p86, p87, p88, p89, p90, p91, p92, p93, p94, p95, p96, p97, p98, p99, p100, p101, p102, p103, p104, p105, p106, p107, p108, p109, p110, p111, p112, p113, p114, p115, p116, p117, p118, p119, p120,p121, p122, p123, p124, p125, p126, p127, p128, p129, p130, p131, p132, p133, p134, p135, p136, p137, p138, p139, p140, p141, p142, p143, p144, p145, p146, p147, p148, p149, p150, p151, p152, p153, p154, p155, p156, p157, p158, p159, p160, ASR, AS, AS2, RES, RES2, RESR, EST, EST2, ESTR, SOC, SOC2, SOCR, AUTOESTIMA, CAU,CAU2,CAUR, ORI, ORI2, ORIR, COMP,COMP2,COMPR, VIT,VIT2,VITR, SEX;
+var p81, p82, p83, p84, p85, p86, p87, p88, p89, p90, p91, p92, p93, p94, p95, p96, p97, p98, p99, p100, p101, p102, p103, p104, p105, p106, p107, p108, p109, p110, p111, p112, p113, p114, p115, p116, p117, p118, p119, p120,p121, p122, p123, p124, p125, p126, p127, p128, p129, p130, p131, p132, p133, p134, p135, p136, p137, p138, p139, p140, p141, p142, p143, p144, p145, p146, p147, p148, p149, p150, p151, p152, p153, p154, p155, p156, p157, p158, p159, p160, ASR, AS, AS2, RES, RES2, RESR, EST, EST2, ESTR, SOC, SOC2, SOCR, AUTOEST, CAU,CAU2,CAUR, ORI, ORI2, ORIR, COMP,COMP2,COMPR, VIT,VIT2,VITR, SEX;
 var p81d, p82d, p83d, p84d, p85d, p86d, p87d, p88d, p89d, p90d, p91d, p92d, p93d, p94d, p95d, p96d, p97d, p98d, p99d, p100d, p101d, p102d, p103d, p104d, p105d, p106d, p107d, p108d, p109d, p110d, p111d, p112d, p113d, p114d, p115d, p116d, p117d, p118d, p119d, p120d,p121d, p122d, p123d, p124d, p125d, p126d, p127d, p128d, p129d, p130d, p131d, p132d, p133d, p134d, p135d, p136d, p137d, p138d, p139d, p140d, p141d, p142d, p143d, p144d, p145d, p146d, p147d, p148d, p149d, p150d, p151d, p152d, p153d, p154d, p155d, p156d, p157d, p158d, p159d, p160d;
 
 if (document.getElementById('sexo').checked==true){SEX=1}
@@ -640,7 +640,7 @@ CAUR=CAU+CAU2;
 ORIR=ORI+ORI2;
 VITR=VIT+VIT2;
 COMPR=COMP+COMP2;
-AUTOESTIMA=ASR+RESR+ESTR+SOCR;
+AUTOEST=ASR+RESR+ESTR+SOCR;
 
 //se almacenan resultados para usarlos en la siguiente pagina
 
@@ -675,6 +675,9 @@ localStorage.setItem('VIT2', VIT2);
 localStorage.setItem('COMPR', COMPR);
 localStorage.setItem('COMP', COMP);
 localStorage.setItem('COMP2', COMP2);
+
+localStorage.setItem('AUTOEST', AUTOEST);
+
 
 document.location = 'Respipg.html'; 
 

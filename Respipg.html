@@ -43,83 +43,83 @@ Este test permite la evaluacion de las siguientes dimensiones de la personalidad
 
 	<th>&nbsp;</th>
     <th>Prc</th>
-    <th>xx</th>
+    <th><span id="AS"></span></th>
     <th>Prc</th>
-    <th>yy</th>
+    <th><span id="RES"></span></th>
     <th>Prc</th>
-    <th>zz</th>
+    <th><span id="EST"></span></th>
     <th>Prc</th>
-  	<th>dd</th>
+  	<th><span id="SOC"></span></th>
   </tr>
   <tr>
 	<th>&nbsp;</th>
     <th>%</th>
-    <th>xx</th>
+    <th><span id="AS2"></span></th>
     <th>%</th>
-    <th>yy</th>
+    <th><span id="RES2"></span></th>
     <th>%</th>
-    <th>zz</th>
+    <th><span id="EST2"></span></th>
     <th>%</th>
-  	<th>dd</th>
+  	<th><span id="SOC2"></span></th>
   </tr>
   <tr>
 	<th>&nbsp;</th>
     <th>Total</th>
-    <th><span id="ASR">100</span></th>
+    <th><span id="ASR"></span></th>
     <th>Total</th>
-    <th>yy</th>
+    <th><span id="RESR"></span></th>
     <th>Total</th>
-    <th>zz</th>
+    <th><span id="ESTR"></span></th>
     <th>Total</th>
-  	<th>dd</th>
-
-  	<tr>
-  	<th>AUTOESTIMA: </th>
-  </tr>
-
-  <tr>
-    <td>&nbsp;</td>
-    <td>CAU</td>
-    <td>&nbsp;</td>
-    <td>ORI</td>
-    <td>&nbsp;</td>
-    <td>COM</td>
-    <td>&nbsp;</td>
-    <td>VIT</td>
-    <td>&nbsp;</td>
+  	<th><span id="SOCR"></span></th>
   </tr>
   <tr>
-    <td>&nbsp;</td>
-    <td>Prc</td>
-    <td>aa</td>
-    <td>Prc</td>
-    <td>bb</td>
-    <td>Prc</td>
-    <td>cc</td>
-    <td>Prc</td>
-    <td>ee</td>
+    &nbsp;
+    <th>AUTOESTIMA: <span id="AUTOEST"></span></th>
   </tr>
   <tr>
-    <td>&nbsp;</td>
-    <td>%</td>
-    <td>aa</td>
-    <td>%</td>
-    <td>bb</td>
-    <td>%</td>
-    <td>cc</td>
-    <td>%</td>
-    <td>ee</td>
+    <th>&nbsp;</th>
+    <th>CAU</th>
+    <th>&nbsp;</th>
+    <th>ORI</th>
+    <th>&nbsp;</th>
+    <th>COM</th>
+    <th>&nbsp;</th>
+    <th>VIT</th>
+    <th>&nbsp;</th>
   </tr>
   <tr>
-    <td>&nbsp;</td>
-    <td>Total</td>
-    <td>aa</td>
-    <td>Total</td>
-    <td>bb</td>
-    <td>Total</td>
-    <td>cc</td>
-    <td>Total</td>
-    <td>ee</td>
+    <th>&nbsp;</th>
+    <th>Prc</th>
+    <th><span id="CAU"></span></th>
+    <th>Prc</th>
+    <th><span id="ORI"></span></th>
+    <th>Prc</th>
+    <th><span id="COMP"></span></th>
+    <th>Prc</th>
+    <th><span id="VIT"></span></th>
+  </tr>
+  <tr>
+    <th>&nbsp;</th>
+    <th>%</th>
+    <th><span id="CAU2"></span></th>
+    <th>%</th>
+    <th><span id="ORI2"></span></th>
+    <th>%</th>
+    <th><span id="COMP2"></span></th>
+    <th>%</th>
+    <th><span id="VIT2"></span></th>
+  </tr>
+  <tr>
+    <th>&nbsp;</th>
+    <th>Total</th>
+    <th><span id="CAUR"></span></th>
+    <th>Total</th>
+    <th><span id="ORIR"></span></th>
+    <th>Total</th>
+    <th><span id="COMPR"></span></th>
+    <th>Total</th>
+    <th><span id="VITR"></span></th>
   </tr>
 
   <tr>
@@ -152,6 +152,30 @@ Este test permite la evaluacion de las siguientes dimensiones de la personalidad
 <script>
 
   document.getElementById('ASR').textContent = localStorage.getItem('ASR');
+  document.getElementById('AS').textContent = localStorage.getItem('AS');
+  document.getElementById('AS2').textContent = localStorage.getItem('AS2');
+  document.getElementById('RESR').textContent = localStorage.getItem('RESR');
+  document.getElementById('RES').textContent = localStorage.getItem('RES');
+  document.getElementById('RES2').textContent = localStorage.getItem('RES2');
+  document.getElementById('ESTR').textContent = localStorage.getItem('ESTR');
+  document.getElementById('EST').textContent = localStorage.getItem('EST');
+  document.getElementById('EST2').textContent = localStorage.getItem('EST2');
+  document.getElementById('SOCR').textContent = localStorage.getItem('SOCR');
+  document.getElementById('SOC').textContent = localStorage.getItem('SOC');
+  document.getElementById('SOC2').textContent = localStorage.getItem('SOC2');
+  document.getElementById('CAUR').textContent = localStorage.getItem('CAUR');
+  document.getElementById('CAU').textContent = localStorage.getItem('CAU');
+  document.getElementById('CAU2').textContent = localStorage.getItem('CAU2');
+  document.getElementById('ORIR').textContent = localStorage.getItem('ORIR');
+  document.getElementById('ORI').textContent = localStorage.getItem('ORI');
+  document.getElementById('ORI2').textContent = localStorage.getItem('ORI2');
+  document.getElementById('COMPR').textContent = localStorage.getItem('COMPR');
+  document.getElementById('COMP').textContent = localStorage.getItem('COMP');
+  document.getElementById('COMP2').textContent = localStorage.getItem('COMP2');
+  document.getElementById('VITR').textContent = localStorage.getItem('VITR');
+  document.getElementById('VIT').textContent = localStorage.getItem('VIT');
+  document.getElementById('VIT2').textContent = localStorage.getItem('VIT2');
+  document.getElementById('AUTOEST').textContent = localStorage.getItem('AUTOEST');
 
 </script>
 </body>
