@@ -642,6 +642,39 @@ VITR=VIT+VIT2;
 COMPR=COMP+COMP2;
 AUTOESTIMA=ASR+RESR+ESTR+SOCR;
 
+//se almacenan resultados para usarlos en la siguiente pagina
+
+localStorage.setItem('ASR', ASR);
+localStorage.setItem('AS', AS);
+localStorage.setItem('AS2', AS2);
+
+localStorage.setItem('RESR', RESR);
+localStorage.setItem('RES', RES);
+localStorage.setItem('RES2', RES2);
+
+localStorage.setItem('ESTR', ESTR);
+localStorage.setItem('EST', EST);
+localStorage.setItem('EST2', EST2);
+
+localStorage.setItem('SOCR', SOCR);
+localStorage.setItem('SOC', SOC);
+localStorage.setItem('SOC2', SOC2);
+
+localStorage.setItem('CAUR', CAUR);
+localStorage.setItem('CAU', CAU);
+localStorage.setItem('CAU2', CAU2);
+
+localStorage.setItem('ORIR', ORIR);
+localStorage.setItem('ORI', ORI);
+localStorage.setItem('ORI2', ORI2);
+
+localStorage.setItem('VITR', VITR);
+localStorage.setItem('VIT', VIT);
+localStorage.setItem('VIT2', VIT2);
+
+localStorage.setItem('COMPR', COMPR);
+localStorage.setItem('COMP', COMP);
+localStorage.setItem('COMP2', COMP2);
 
 //document.write("<table border='3'>");
 
